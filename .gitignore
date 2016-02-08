@@ -1,1 +1,6 @@
+/.settings
+/.project
+/.classpath
+/.factorypath
 .DS_Store
+.sass-cache
