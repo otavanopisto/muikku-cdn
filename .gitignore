@@ -4,3 +4,4 @@
 /.factorypath
 .DS_Store
 .sass-cache
+/.tern-project
