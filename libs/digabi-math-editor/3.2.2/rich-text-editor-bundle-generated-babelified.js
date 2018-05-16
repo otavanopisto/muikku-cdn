@@ -187,6 +187,7 @@ function markAndGetInlineImages($editor) {
 function decodeBase64Image(dataString) {
     if (!dataString) return null;
     var matches = dataString.match(/^data:([A-Za-z-+/]+);base64,(.+)$/);
+    if (!matches) return null;
     if (matches.length !== 3) {
         return null;
     }
