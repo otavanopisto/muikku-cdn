@@ -182,7 +182,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/scripts/conversejs/";
+/******/ 	__webpack_require__.p = "https://cdn.muikkuverkko.fi/libs/converse/6.0.0/";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
@@ -68482,4 +68482,4 @@ _headless_utils_core__WEBPACK_IMPORTED_MODULE_16__["default"].xForm2webForm = fu
 /***/ })
 
 /******/ });
-//# sourceMappingURL=converse-headless.min.js.map
+//# sourceMappingURL=converse-headless.js.map
