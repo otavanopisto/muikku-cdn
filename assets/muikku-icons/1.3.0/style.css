@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'muikku';
-  src:  url('fonts/muikku.eot?e3rzx8');
-  src:  url('fonts/muikku.eot?e3rzx8#iefix') format('embedded-opentype'),
-    url('fonts/muikku.ttf?e3rzx8') format('truetype'),
-    url('fonts/muikku.woff?e3rzx8') format('woff'),
-    url('fonts/muikku.svg?e3rzx8#muikku') format('svg');
+  src:  url('fonts/muikku.eot?hj83kz');
+  src:  url('fonts/muikku.eot?hj83kz#iefix') format('embedded-opentype'),
+    url('fonts/muikku.ttf?hj83kz') format('truetype'),
+    url('fonts/muikku.woff?hj83kz') format('woff'),
+    url('fonts/muikku.svg?hj83kz#muikku') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30,12 +30,6 @@
 }
 .icon-file-text1:before {
   content: "\e92c";
-}
-.icon-mapbox:before {
-  content: "\e92b";
-}
-.icon-exclamation-circle:before {
-  content: "\f06a";
 }
 .icon-external-link:before {
   content: "\f08e";
@@ -351,4 +345,7 @@
 }
 .icon-blocked:before {
   content: "\ea0e";
+}
+.icon-location2:before {
+  content: "\e948";
 }
