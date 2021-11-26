@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'muikku';
-  src:  url('fonts/muikku.eot?xt6sni');
-  src:  url('fonts/muikku.eot?xt6sni#iefix') format('embedded-opentype'),
-    url('fonts/muikku.ttf?xt6sni') format('truetype'),
-    url('fonts/muikku.woff?xt6sni') format('woff'),
-    url('fonts/muikku.svg?xt6sni#muikku') format('svg');
+  src:  url('fonts/muikku.eot?4qekff');
+  src:  url('fonts/muikku.eot?4qekff#iefix') format('embedded-opentype'),
+    url('fonts/muikku.ttf?4qekff') format('truetype'),
+    url('fonts/muikku.woff?4qekff') format('woff'),
+    url('fonts/muikku.svg?4qekff#muikku') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-forward:before {
+  content: "\e930";
+}
 .icon-shopping-cart:before {
   content: "\e92f";
 }
@@ -345,9 +348,6 @@
 }
 .icon-leanpub:before {
   content: "\f212";
-}
-.icon-forward:before {
-  content: "\e969";
 }
 .icon-blocked:before {
   content: "\ea0e";
