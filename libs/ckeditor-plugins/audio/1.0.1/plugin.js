@@ -2,6 +2,7 @@
  * @file Audio plugin for CKEditor
  * This is only an adaptation of Video plugin for CKEditor created by Alfonso Martínez de Lizarrondo
  * Adapted by Philippe Jeoris
+ * Expanded by Jari Lankinen by adding support for CKE4 ACF feature
  *
  * == BEGIN LICENSE ==
  *
@@ -63,7 +64,11 @@ CKEDITOR.plugins.add( 'audio',
 
 		CKEDITOR.dialog.add( 'audio', this.path + 'dialogs/audio.js' );
 
-		editor.addCommand( 'Audio', new CKEDITOR.dialogCommand( 'audio' ) );
+		editor.addCommand( 'Audio', new CKEDITOR.dialogCommand( 'audio', {
+      allowedContent: 'audio[*]{*}(*)',
+      requiredContent: 'audio'
+    } ) );
+
 		editor.ui.addButton( 'Audio',
 			{
 				label : lang.toolbar,
