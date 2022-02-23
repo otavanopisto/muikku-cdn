@@ -65,8 +65,8 @@ CKEDITOR.plugins.add( 'audio',
 		CKEDITOR.dialog.add( 'audio', this.path + 'dialogs/audio.js' );
 
 		editor.addCommand( 'Audio', new CKEDITOR.dialogCommand( 'audio', {
-      allowedContent: 'audio[*]{*}(*)',
-      requiredContent: 'audio'
+      allowedContent: 'audio source[*]{*}(*)',
+      requiredContent: 'audio source'
     } ) );
 
 		editor.ui.addButton( 'Audio',
