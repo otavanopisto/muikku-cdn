@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'muikku';
-  src:  url('fonts/muikku.eot?2l7z10');
-  src:  url('fonts/muikku.eot?2l7z10#iefix') format('embedded-opentype'),
-    url('fonts/muikku.ttf?2l7z10') format('truetype'),
-    url('fonts/muikku.woff?2l7z10') format('woff'),
-    url('fonts/muikku.svg?2l7z10#muikku') format('svg');
+  src:  url('fonts/muikku.eot?62h9w0');
+  src:  url('fonts/muikku.eot?62h9w0#iefix') format('embedded-opentype'),
+    url('fonts/muikku.ttf?62h9w0') format('truetype'),
+    url('fonts/muikku.woff?62h9w0') format('woff'),
+    url('fonts/muikku.svg?62h9w0#muikku') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,7 +25,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-note_add:before {
+.icon-note-add:before {
   content: "\e93b";
 }
 .icon-note:before {
