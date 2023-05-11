@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'muikku';
-  src:  url('fonts/muikku.eot?jxrur2');
-  src:  url('fonts/muikku.eot?jxrur2#iefix') format('embedded-opentype'),
-    url('fonts/muikku.ttf?jxrur2') format('truetype'),
-    url('fonts/muikku.woff?jxrur2') format('woff'),
-    url('fonts/muikku.svg?jxrur2#muikku') format('svg');
+  src:  url('fonts/muikku.eot?gvn2xy');
+  src:  url('fonts/muikku.eot?gvn2xy#iefix') format('embedded-opentype'),
+    url('fonts/muikku.ttf?gvn2xy') format('truetype'),
+    url('fonts/muikku.woff?gvn2xy') format('woff'),
+    url('fonts/muikku.svg?gvn2xy#muikku') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -405,4 +405,10 @@
 }
 .icon-notification:before {
   content: "\ea08";
+}
+.icon-play:before {
+  content: "\ea15";
+}
+.icon-pause:before {
+  content: "\ea16";
 }
