@@ -18,7 +18,7 @@
         requires: 'api,widget',
         icons: 'detail',
         hidpi: true,
-        lang: 'de,en,uk,ru',
+        lang: 'de,en,uk,ru,fi',
         init: function (editor) {
             /**
              * Widget
