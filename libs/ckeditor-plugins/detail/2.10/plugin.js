@@ -29,13 +29,12 @@
                 editables: {
                     summary: {
                         selector: 'summary.details__summary',
-                        allowedContent: {}
                     },
                     content: {
                         selector: 'div.details__content'
                     }
                 },
-                allowedContent: 'details(details); summary(details__summary);div(details__content)',
+                allowedContent: 'details(!details); summary(!details__summary);div(!details__content)',
                 requiredContent: 'details(details)',
                 upcast: function (el) {
                     if (el.name !== 'details') {
