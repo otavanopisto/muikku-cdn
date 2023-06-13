@@ -35,8 +35,8 @@
                         selector: 'div.details__content'
                     }
                 },
-                allowedContent: 'details(!details); summary(!details__summary);div(!details__content)',
-                requiredContent: 'details',
+                allowedContent: 'details(details); summary(details__summary);div(details__content)',
+                requiredContent: 'details(details)',
                 upcast: function (el) {
                     if (el.name !== 'details') {
                         return false;
