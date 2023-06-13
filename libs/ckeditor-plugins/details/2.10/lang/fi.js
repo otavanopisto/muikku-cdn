@@ -1,7 +1,7 @@
 'use strict';
 
 (function (CKEDITOR) {
-    CKEDITOR.plugins.setLang('detail', 'fi', {
+    CKEDITOR.plugins.setLang('details', 'fi', {
         title: 'Yhteenveto'
     });
 })(CKEDITOR);
