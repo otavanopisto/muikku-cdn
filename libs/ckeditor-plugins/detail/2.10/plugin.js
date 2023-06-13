@@ -93,12 +93,12 @@
             });
         },
         onLoad: function () {
-            CKEDITOR.addCss(
-                'details {line-height: 1.5rem;}' +
-                'details > * {padding: 0.375rem;background: #fff;}' +
-                'details[open] > :not(:last-child) {margin-bottom: 0.75rem;}' +
-                'details .cke_widget_editable {outline: none !important;}'
-            );
+            // CKEDITOR.addCss(
+            //     'details {line-height: 1.5rem;}' +
+            //     'details > * {padding: 0.375rem;background: #fff;}' +
+            //     'details[open] > :not(:last-child) {margin-bottom: 0.75rem;}' +
+            //     'details .cke_widget_editable {outline: none !important;}'
+            // );
         }
     });
 })(CKEDITOR);
