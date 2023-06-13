@@ -61,34 +61,34 @@
 
                     return element.name == 'details' && element.hasClass( 'details' );
                 },
-                downcast: function (element) {
-                  element.attributes = [];
-                  element.children[0].attributes = [];
+                // downcast: function (element) {
+                //   element.attributes = [];
+                //   element.children[0].attributes = [];
 
-                    // Content
-                    element.children[1].setHtml(this.editables.content.getData());
-                    element.children[1].children.forEach(function (item) {
-                        CKEDITOR.api.parser.add(item, element);
-                    });
-                    element.children[1].remove();
+                //     // Content
+                //     element.children[1].setHtml(this.editables.content.getData());
+                //     element.children[1].children.forEach(function (item) {
+                //         CKEDITOR.api.parser.add(item, element);
+                //     });
+                //     element.children[1].remove();
 
-                    return element.children.length > 1 ? element : new CKEDITOR.htmlParser.text('');
-                },
-                init: function () {
-                    var summary = this.element.getChild(0);
+                //     return element.children.length > 1 ? element : new CKEDITOR.htmlParser.text('');
+                // },
+                // init: function () {
+                //     var summary = this.element.getChild(0);
 
-                    summary.on('blur', function () {
-                        if (!summary.getText().trim()) {
-                            summary.setText(editor.lang.detail.title);
-                        }
-                    });
-                    summary.on('keyup', function (ev) {
-                        if (ev.data['$'].key === ' ' || ev.data['$'].keyCode === 32) {
-                            ev.data['$'].preventDefault();
-                            editor.insertText(' ');
-                        }
-                    });
-                }
+                //     summary.on('blur', function () {
+                //         if (!summary.getText().trim()) {
+                //             summary.setText(editor.lang.detail.title);
+                //         }
+                //     });
+                //     summary.on('keyup', function (ev) {
+                //         if (ev.data['$'].key === ' ' || ev.data['$'].keyCode === 32) {
+                //             ev.data['$'].preventDefault();
+                //             editor.insertText(' ');
+                //         }
+                //     });
+                // }
             });
         }
     });
