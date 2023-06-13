@@ -68,7 +68,7 @@
                     // Content
                     element.children[1].setHtml(this.editables.content.getData());
                     element.children[1].children.forEach(function (item) {
-                        CKEDITOR.api.parser.add(item, el);
+                        CKEDITOR.api.parser.add(item, element);
                     });
                     element.children[1].remove();
 
