@@ -35,7 +35,7 @@
                         selector: 'div.details__content'
                     }
                 },
-                allowedContent: {details: true, summary: true},
+                allowedContent: 'details(!details); summary(!details__summary);div(!details__content)',
                 requiredContent: 'details',
                 upcast: function (el) {
                     if (el.name !== 'details') {
@@ -50,7 +50,7 @@
                     } else if (!!summary && summary.children.length > 0 && summary.children[0].type === CKEDITOR.NODE_TEXT) {
                         summary.setHtml(summary.children[0].value);
                     } else if (!summary) {
-                        el.add(new CKEDITOR.htmlParser.element('summary'), 0);
+                        el.add(new CKEDITOR.htmlParser.element('summary', {'class': 'details__summary'}), 0);
                     }
 
                     el.add(content, 1);
