@@ -25,7 +25,7 @@
              */
             editor.widgets.add('detail', {
                 button: editor.lang.detail.title,
-                template: '<details><summary>' + editor.lang.detail.title +'</summary><div class="content"></div></details>',
+                template: '<details class="details"><summary class="details__summary">' + editor.lang.detail.title +'</summary><div class="details__summary-content"></div></details>',
                 editables: {
                     summary: {
                         selector: 'summary',
@@ -43,7 +43,7 @@
                     }
 
                     var summary = el.getFirst('summary');
-                    var content = new CKEDITOR.htmlParser.element('div', {'class': 'content'});
+                    var content = new CKEDITOR.htmlParser.element('div', {'class': 'details__summary-content'});
 
                     if (!!summary && summary.children.length > 0 && summary.children[0].type === CKEDITOR.NODE_ELEMENT) {
                         summary.setHtml(summary.children[0].getHtml());
@@ -93,12 +93,12 @@
             });
         },
         onLoad: function () {
-            CKEDITOR.addCss(
-                'details {line-height: 1.5rem;padding: 0.75rem;background: #eee;border: 0.0625rem solid #ddd;border-radius: 0.5rem;}' +
-                'details > * {padding: 0.375rem;background: #fff;}' +
-                'details[open] > :not(:last-child) {margin-bottom: 0.75rem;}' +
-                'details .cke_widget_editable {outline: none !important;}'
-            );
+            // CKEDITOR.addCss(
+            //     'details {line-height: 1.5rem;padding: 0.75rem;background: #eee;border: 0.0625rem solid #ddd;border-radius: 0.5rem;}' +
+            //     'details > * {padding: 0.375rem;background: #fff;}' +
+            //     'details[open] > :not(:last-child) {margin-bottom: 0.75rem;}' +
+            //     'details .cke_widget_editable {outline: none !important;}'
+            // );
         }
     });
 })(CKEDITOR);
