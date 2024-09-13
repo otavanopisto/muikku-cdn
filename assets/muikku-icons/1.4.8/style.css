@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'muikku';
-  src:  url('fonts/muikku.eot?md49n4');
-  src:  url('fonts/muikku.eot?md49n4#iefix') format('embedded-opentype'),
-    url('fonts/muikku.ttf?md49n4') format('truetype'),
-    url('fonts/muikku.woff?md49n4') format('woff'),
-    url('fonts/muikku.svg?md49n4#muikku') format('svg');
+  src:  url('fonts/muikku.eot?di9ffq');
+  src:  url('fonts/muikku.eot?di9ffq#iefix') format('embedded-opentype'),
+    url('fonts/muikku.ttf?di9ffq') format('truetype'),
+    url('fonts/muikku.woff?di9ffq') format('woff'),
+    url('fonts/muikku.svg?di9ffq#muikku') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,9 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-compass:before {
-  content: "\e940";
-}
 .icon-arrow-down-right:before {
   content: "\e942";
 }
@@ -106,7 +103,7 @@
 .icon-exclamation:before {
   content: "\f12a";
 }
-.icon-compass2:before {
+.icon-compass:before {
   content: "\e94a";
 }
 .icon-link:before {
